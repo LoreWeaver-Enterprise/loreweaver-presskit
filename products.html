@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - LoreWeaver Press Kit</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <nav class="sidebar">
+            <div class="sidebar-logo">
+                <img src="images/logo.png" alt="LoreWeaver">
+                <h2>Press Kit</h2>
+            </div>
+
+            <div class="nav-section">
+                <a href="index.html" class="nav-link">Home</a>
+            </div>
+
+            <div class="nav-section">
+                <div class="nav-section-title">About</div>
+                <a href="company.html" class="nav-link">Company</a>
+                <a href="team.html" class="nav-link">Team</a>
+            </div>
+
+            <div class="nav-section">
+                <div class="nav-section-title">Product</div>
+                <a href="products.html" class="nav-link active">Products</a>
+                <a href="screenshots.html" class="nav-link">Screenshots</a>
+            </div>
+
+            <div class="nav-section">
+                <div class="nav-section-title">Media</div>
+                <a href="brand-assets.html" class="nav-link">Brand Assets</a>
+                <a href="news.html" class="nav-link">News and Milestones</a>
+            </div>
+
+            <button class="theme-toggle" id="theme-toggle" onclick="toggleTheme()" title="Toggle light/dark mode">
+                <span class="theme-toggle-icon" id="theme-icon"></span> <span id="theme-label"></span>
+            </button>
+        </nav>
+
+        <main class="main-content">
+            <div class="page-header">
+                <h1>Products</h1>
+                <p class="subtitle">What LoreWeaver builds and why it matters</p>
+            </div>
+
+            <p>LoreWeaver offers two products that together form a complete narrative pipeline for game development. <strong>Architect</strong> handles the authoring side. <strong>Director</strong> handles the runtime side. No other tool on the market covers both.</p>
+
+            <hr>
+
+            <h2>Architect: Narrative Authoring</h2>
+
+            <div style="border-radius: 8px; overflow: hidden; border: 1px solid var(--border-color); margin-bottom: 20px;">
+                <img src="images/architect-7.png" alt="LoreWeaver Architect: entity relationship graph" style="width: 100%; display: block;">
+            </div>
+
+            <h3>What it does</h3>
+            <p>Architect takes raw creative material (lore documents, world bibles, design docs, scripts) and transforms it into structured, game ready narrative data. It produces quests, dialogue trees, character profiles, location descriptions, and branching storylines that developers can export directly into their game engines.</p>
+
+            <h3>How it works</h3>
+            <p>Writers import their existing documents into Architect. The system analyzes the text and extracts narrative entities: characters, locations, items, story arcs, and their relationships. Writers review and refine every extraction. They stay in full creative control at every step. When they are satisfied, they export the structured data as XML, JSON, or CSV files ready for integration into any game engine.</p>
+
+            <h3>Key facts</h3>
+            <ul>
+                <li>Supports <strong>11 input document formats</strong> and <strong>10 media formats</strong></li>
+                <li>Extracts <strong>13 configurable entity types</strong> (characters, locations, items, story arcs, and more)</li>
+                <li>Processes a full document in <strong>5 to 7 minutes</strong></li>
+                <li>Exports to <strong>XML, JSON, and CSV</strong></li>
+                <li>Runs on a <strong>7 step workflow</strong>: import, schema generation, schema editing, entity extraction, entity review, relationship linking, export</li>
+                <li>Supports <strong>multi user collaboration</strong> with three permission levels</li>
+                <li>Currently in <strong>open beta</strong></li>
+            </ul>
+
+            <h3>Who it serves</h3>
+            <p>Architect serves narrative designers, game writers, and worldbuilders at studios of every size. Solo developers use it to structure their lore efficiently. Large studios use it to accelerate the pipeline from raw creative material to production ready game data. The tool works equally well for RPGs, adventure games, visual novels, and any genre that relies on structured narrative content.</p>
+
+            <div class="copy-block">
+                <span class="copy-label">One line description</span>
+                <p>Architect converts raw lore and world bibles into structured, game ready narrative data using AI, with the writer in full creative control.</p>
+            </div>
+
+            <hr>
+
+            <h2>Director: Runtime Narrative Engine</h2>
+
+            <div style="border-radius: 8px; overflow: hidden; border: 1px solid var(--border-color); margin-bottom: 20px;">
+                <img src="images/director-2.png" alt="LoreWeaver Director: runtime narrative engine" style="width: 100%; display: block;">
+            </div>
+
+            <h3>What it does</h3>
+            <p>Director generates live NPC behavior, dynamic dialogue, and adaptive plot at runtime. It runs entirely on the player's device using optimized small language models. This means zero cloud costs, zero latency from server round trips, and zero data privacy concerns for the studio or the player.</p>
+
+            <h3>How it works</h3>
+            <p>Director receives structured narrative data (from Architect or any other source) and uses it to ground every AI response in the game's actual lore. When a player interacts with an NPC, Director generates contextually appropriate dialogue, tracks the consequences of player choices, and updates the game state accordingly. A conflict resolution schema validates every state change before it reaches the game, preventing the AI from breaking game logic or contradicting established lore.</p>
+
+            <h3>Key facts</h3>
+            <ul>
+                <li>Runs <strong>entirely on device</strong> with no cloud dependency</li>
+                <li>Achieves a <strong>94% valid response rate</strong> across 100 real RPG scenarios</li>
+                <li>Delivers <strong>86.7% intent classification accuracy</strong> across 16 intent categories</li>
+                <li>Supports <strong>5 genres</strong>: Fantasy RPG, Post Apocalyptic, Western, Cosmic Horror, Sci Fi</li>
+                <li>Validated through a <strong>full RPG integration</strong> (Faereld: Dead End) with 21 game systems, 249 items, 8 factions, and 100+ combat templates</li>
+                <li>Currently in <strong>pilot programs</strong> with select studios</li>
+            </ul>
+
+            <h3>Who it serves</h3>
+            <p>Director targets studios building games where player agency and NPC reactivity matter. RPGs, open world games, simulation games, and live service titles all benefit from NPCs that respond dynamically to player behavior. Studios that care about data privacy, offline play, or eliminating ongoing cloud costs find Director especially compelling.</p>
+
+            <div class="copy-block">
+                <span class="copy-label">One line description</span>
+                <p>Director generates live NPC behavior and adaptive dialogue at runtime, entirely on the player's device, grounded in the game's actual lore.</p>
+            </div>
+
+            <hr>
+
+            <h2>The Full Pipeline</h2>
+            <p>Architect and Director connect directly. Structured data from Architect flows into Director's runtime engine, creating a seamless pipeline from raw creative material to live in game narrative. Studios can use either product independently, but together they deliver something no competitor offers: an end to end workflow from unstructured lore to on device, lore grounded NPC behavior.</p>
+
+            <div class="callout">
+                <p><strong>Why on device matters:</strong> Cloud based AI creates three problems for game studios. Latency from server round trips breaks immersion. Ongoing per token costs eat into margins. Sending player data to external servers creates privacy and IP risk. Director eliminates all three by running locally.</p>
+            </div>
+
+            <div class="page-footer">
+                LoreWeaver Press Kit &middot; GrimmWyrd Studios &middot; March 2026
+            </div>
+        </main>
+    </div>
+<script>
+(function() {
+    var theme = localStorage.getItem('presskit-theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', theme);
+    function updateBtn(t) {
+        var icon = document.getElementById('theme-icon');
+        var label = document.getElementById('theme-label');
+        if (icon) icon.textContent = '';
+        if (label) label.textContent = t === 'dark' ? 'Light mode' : 'Dark mode';
+    }
+    window.toggleTheme = function() {
+        var current = document.documentElement.getAttribute('data-theme') || 'dark';
+        var next = current === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('presskit-theme', next);
+        updateBtn(next);
+    };
+    document.addEventListener('DOMContentLoaded', function() { updateBtn(theme); });
+})();
+</script>
+</body>
+</html>
